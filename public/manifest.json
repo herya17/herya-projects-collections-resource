@@ -1,0 +1,27 @@
+{
+  "short_name": "Herya Pro",
+  "name": "Herya Projects",
+  "icons": [
+    {
+      "src": "images/favicon/icon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/favicon/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/favicon/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "description": "Herya Projects - Herya Projects, CodeAnImpact Part, Portfolio, and More",
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#f2f2f2",
+  "background_color": "#ffffff"
+}

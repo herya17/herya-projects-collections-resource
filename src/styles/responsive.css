@@ -1,0 +1,162 @@
+@media screen and (min-width: 425px) {
+	/* the modal background */
+	.modal {
+		padding-top: 10%;
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+		max-width: 55%;
+	}
+
+	.search-delete {
+		margin-top: 2%;
+	}
+}
+
+@media screen and (min-width: 570px) {
+
+	/* Modal Content (image) */
+	.modal-content {
+		max-width: 40%;
+	}
+
+	.dynamic-island p {
+		flex-basis: 80%;
+	}
+	
+	.dynamic-island input {
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+
+	.box-message {
+		padding: 15%;
+		margin: 10% 20%;
+	}
+}
+
+@media screen and (min-width: 680px) {
+	/* the modal background */
+	.modal {
+		padding-top: 7%;
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+		max-width: 30%;
+	}
+}
+
+
+@media screen and (max-width: 627px) {
+	.dynamic-island {
+		padding: 2px 5px 2px 4%;
+	}
+
+	.collections-item__header-body {
+		margin: 0 0 0 15px;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (min-width: 627px) {
+	.collections-item {
+		padding: 0 18%;
+	}
+
+	.collections-item__images-item {
+		flex-grow: 1;
+
+		max-width: 25%;
+		min-width: 25%;
+		min-height: 100%;
+		/*margin: 0 13px 0 0;*/
+	}
+
+
+	.collections-item__header-body {
+		margin: 0 0 0 12px;
+	}
+
+	input::placeholder {
+		font-size: 15px;
+	}
+
+	input {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.collections-item__images-item {
+		flex-grow: 1;
+
+		max-width: 15%;
+		min-width: 15%;
+		min-height: 100%;
+		/*margin: 0 13px 0 0;*/
+	}
+
+	.collections-item__name {
+		font-size: 16px;
+	}
+
+	.collections-item__author {
+		font-size: 15px;
+	}
+
+	.collections-item__description {
+		font-size: 15px;
+	}
+
+	/* the modal background */
+	.modal {
+		padding-top: 5%;
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+		max-width: 20%;
+	}
+
+	/*box message*/
+	.box-message {
+		padding: 8%;
+		margin: 7% 30% 8% 30%;
+	}
+
+	.search-delete {
+		margin-top: 2%;
+	}
+
+}
+
+@media screen and (min-width: 967px) {
+	.dynamic-island p {
+	flex-basis: 85%;
+	}
+	
+	.dynamic-island input {
+		flex-basis: 15%;
+		max-width: 15%;
+	}
+
+	.search-delete {
+		margin-top: 1%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer {
+		margin-top: 35%;
+	}
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
