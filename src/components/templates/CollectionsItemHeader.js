@@ -1,7 +1,7 @@
 import React from 'react';
 import CollectionsItemButton from './CollectionsItemButton';
 
-function CollectionsItemHeader({ logo, name, author, view, github, open, openCode, isComplete, description, showAlert }) {
+function CollectionsItemHeader({ logo, name, author, view, github, open, openCode, isComplete }) {
 	return (
 		<div className="collections-item__header">
       <div className="collections-item__picture">
@@ -16,9 +16,7 @@ function CollectionsItemHeader({ logo, name, author, view, github, open, openCod
         github={github} 
         open={open} 
         openCode={openCode} 
-        isComplete={isComplete}
-        description={description}
-        showAlert={showAlert} />
+        isComplete={isComplete} />
     </div>
 	);
 }

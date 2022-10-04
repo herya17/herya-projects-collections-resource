@@ -2,6 +2,19 @@ const collectionsResource = [
   {
     id: 0,
     isComplete: false,
+    name: "Tebak Pacar",
+    author: [ 
+      "Heriyanto",
+    ],
+    logo: "./images/logo/tebak-pacar.webp",
+    description: "I'm working on something that can surprise you, I will be here soon, keep smiling.",
+    view: "https://tebak-pacar.netlify.app",
+    github: "",
+    images: [],
+  },
+  {
+    id: 1,
+    isComplete: false,
     name: "CodeAnImpact Part",
     author: [ 
       "Heriyanto",
@@ -9,25 +22,25 @@ const collectionsResource = [
     ],
     logo: "./images/logo/w.webp",
     description: "CodeAnImpact part we're work on to build something that can make a positive impact, our goal is to create meaningful products for everyone with memorable experiences. Stay tuned!",
-    view: "",
-    github: "",
-    images: [],
-  },
-  {
-    id: 1,
-    isComplete: false,
-    name: "Personal Web App",
-    author: [ 
-      "Heriyanto",
-    ],
-    logo: "./images/logo/herya.webp",
-    description: "My personal web app will be available soon. Stay tuned!",
-    view: "",
+    view: "https://codeanimpact.netlify.app",
     github: "",
     images: [],
   },
   {
     id: 2,
+    isComplete: false,
+    name: "Herya App",
+    author: [ 
+      "Heriyanto",
+    ],
+    logo: "./images/logo/herya-2.webp",
+    description: "My personal web app will be available soon. Stay tuned!",
+    view: "https://herya.netlify.app",
+    github: "",
+    images: [],
+  },
+  {
+    id: 3,
     isComplete: true,
     name: "Her App",
     author: [ 
@@ -47,7 +60,7 @@ const collectionsResource = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     isComplete: true,
     name: "Her App Version 2",
     author: [ 
@@ -67,7 +80,7 @@ const collectionsResource = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     isComplete: true,
     name: "EPL Unofficial App",
     author: [ 
@@ -87,7 +100,7 @@ const collectionsResource = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     isComplete: true,
     name: "Personal Notes App",
     author: [ 

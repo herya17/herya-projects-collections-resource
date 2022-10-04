@@ -12,13 +12,17 @@ class App extends React.Component {
 			search: "",
 		}
 
+		// this.showAlertEventHandler = this.showAlertEventHandler.bind(this);
 		this.openEventHandler = this.openEventHandler.bind(this);
 		this.openCodeEventHandler = this.openCodeEventHandler.bind(this);
-		this.showAlertEventHandler = this.showAlertEventHandler.bind(this);
 		this.onSearchChangeEventHandler = this.onSearchChangeEventHandler.bind(this);
 		this.onBlurEventHandler = this.onBlurEventHandler.bind(this);
 		this.onSearchDeleteEventHandler = this.onSearchDeleteEventHandler.bind(this);
 	}
+
+	// showAlertEventHandler(description) {
+	// 	window.alert(description);
+	// }
 
 	openEventHandler(view) {
 		window.open(view);
@@ -26,10 +30,6 @@ class App extends React.Component {
 
 	openCodeEventHandler(github) {
 		window.open(github);
-	}
-
-	showAlertEventHandler(description) {
-		window.alert(description);
 	}
 
 	onSearchChangeEventHandler(event) {
@@ -78,8 +78,7 @@ class App extends React.Component {
 				<CollectionsApp
 					collections={collections}
 					open={this.openEventHandler}
-					openCode={this.openCodeEventHandler}
-					showAlert={this.showAlertEventHandler} />
+					openCode={this.openCodeEventHandler} />
 			</>
 		);
 	}

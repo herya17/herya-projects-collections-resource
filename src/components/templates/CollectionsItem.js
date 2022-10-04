@@ -2,7 +2,7 @@ import React from 'react';
 import CollectionsItemHeader from './CollectionsItemHeader';
 import CollectionsItemBody from './CollectionsItemBody';
 
-function CollectionsItem({ id, logo, name, author, description, images, view, github, open, openCode, isComplete, showAlert }) {
+function CollectionsItem({ id, logo, name, author, description, images, view, github, open, openCode, isComplete }) {
 	return (
 		<div className="collections-item">
 			<CollectionsItemHeader 
@@ -13,9 +13,7 @@ function CollectionsItem({ id, logo, name, author, description, images, view, gi
 				github={github} 
 				open={open} 
 				openCode={openCode}
-				isComplete={isComplete}
-				description={description}
-				showAlert={showAlert} />
+				isComplete={isComplete} />
 			<CollectionsItemBody
 				id={id}
 				name={name} 

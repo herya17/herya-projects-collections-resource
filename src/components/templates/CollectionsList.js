@@ -1,7 +1,7 @@
 import React from 'react';
 import CollectionsItem from './CollectionsItem';
 
-function CollectionsList({ collections, open, openCode, showAlert }) {
+function CollectionsList({ collections, open, openCode }) {
 	return (
 		<div className="collections-list">
 			{
@@ -10,7 +10,6 @@ function CollectionsList({ collections, open, openCode, showAlert }) {
 						key={collection.id} 
 						open={open} 
 						openCode={openCode}
-						showAlert={showAlert} 
 						{...collection} />
 				))
 			}

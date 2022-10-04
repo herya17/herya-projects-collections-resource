@@ -2,7 +2,7 @@ import React from 'react';
 import CollectionsList from './CollectionsList';
 import BoxMessage from '../contents/BoxMessage';
 
-function CollectionsApp({ collections, open, openCode, showAlert }) {
+function CollectionsApp({ collections, open, openCode }) {
 	return (
 		<>
 		{
@@ -10,8 +10,7 @@ function CollectionsApp({ collections, open, openCode, showAlert }) {
 				? <CollectionsList 
 					collections={collections} 
 					open={open} 
-					openCode={openCode}
-					showAlert={showAlert} />
+					openCode={openCode} />
 				: <BoxMessage
 					icon="pan_tool"
 					message="Title could not be found!" />

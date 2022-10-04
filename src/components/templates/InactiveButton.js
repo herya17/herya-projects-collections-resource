@@ -1,10 +1,10 @@
 import React from 'react';
 
-function InactiveButton({ description, showAlert }) {
+function InactiveButton({ view, open }) {
 	return (
 		<>
 			<div className="collections-item__button-comingsoon">
-				<button onClick={() => showAlert(description)}>Coming soon</button>
+				<button onClick={() => open(view)}>Coming soon</button>
 			</div>
 		</>
 	);
