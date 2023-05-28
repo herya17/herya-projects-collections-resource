@@ -7,8 +7,8 @@ function CollectionsItemButton({ view, github, open, openCode, isComplete }) {
 		<div className="collections-item__button">
 			{
 				isComplete
-				? <ActiveButton view={view} github={github} open={open} openCode={openCode} />
-				: <InactiveButton view={view} open={open} />
+					? <ActiveButton view={view} github={github} open={open} openCode={openCode} />
+					: <InactiveButton view={view} open={open} />
 			}
 	    </div>
 	);

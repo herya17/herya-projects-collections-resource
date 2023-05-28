@@ -1,20 +1,8 @@
-const collectionsResource = [
+const collections = [
   {
     id: 0,
     isComplete: false,
-    name: "Tebak Pacar",
-    author: [ 
-      "Heriyanto",
-    ],
-    logo: "./images/logo/tebak-pacar.webp",
-    description: "I'm working on something that can surprise you, I will be here soon, keep smiling.",
-    view: "https://tebak-pacar.netlify.app",
-    github: "",
-    images: [],
-  },
-  {
-    id: 1,
-    isComplete: false,
+    isNew: false,
     name: "CodeAnImpact Part",
     author: [ 
       "Heriyanto",
@@ -27,8 +15,9 @@ const collectionsResource = [
     images: [],
   },
   {
-    id: 2,
+    id: 1,
     isComplete: false,
+    isNew: false,
     name: "Herya App",
     author: [ 
       "Heriyanto",
@@ -40,8 +29,49 @@ const collectionsResource = [
     images: [],
   },
   {
+    id: 2,
+    isComplete: true,
+    isNew: true,
+    name: "HeyCa!!",
+    author: [ 
+      "Heriyanto",
+    ],
+    logo: "./images/logo/heyca.webp",
+    description: "Aku pikir ini bisa buat kamu bahagia tapi kelihatannya kamu lebih bahagia dengan yang lain. #lateRelease #lateEverything",
+    view: "https://heyca.netlify.app",
+    github: "https://github.com/herya17/heyca-resource",
+    images: [
+      { id: 0, url: "./images/ui/heyca.webp", },
+      { id: 1, url: "./images/ui/heyca-1.webp", },
+      { id: 2, url: "./images/ui/heyca-2.webp", },
+      { id: 3, url: "./images/ui/heyca-3.webp", },
+      { id: 4, url: "./images/ui/heyca-5.webp", },
+      { id: 5, url: "./images/ui/heyca-4.webp", },
+      { id: 6, url: "./images/ui/heyca-6.webp", },
+    ],
+  },
+  {
     id: 3,
     isComplete: true,
+    isNew: true,
+    name: "Personal Notes App v2",
+    author: [ 
+      "Heriyanto",
+    ],
+    logo: "./images/logo/note.webp",
+    description: "Build a single page application using React and validate input with PropTypes and implement path and query parameter to send data via URL.",
+    view: "https://personal-notes-app-v2.netlify.app",
+    github: "https://github.com/herya17/personal-notes-app-v2",
+    images: [
+      { id: 0, url: "./images/ui/notev2-1.webp", },
+      { id: 1, url: "./images/ui/notev2-2.webp", },
+      { id: 2, url: "./images/ui/notev2-3.webp", },
+    ],
+  },
+  {
+    id: 4,
+    isComplete: true,
+    isNew: false,
     name: "Her App",
     author: [ 
       "Heriyanto",
@@ -60,8 +90,9 @@ const collectionsResource = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     isComplete: true,
+    isNew: false,
     name: "Her App Version 2",
     author: [ 
       "Heriyanto",
@@ -80,8 +111,9 @@ const collectionsResource = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     isComplete: true,
+    isNew: false,
     name: "EPL Unofficial App",
     author: [ 
       "Heriyanto",
@@ -100,8 +132,9 @@ const collectionsResource = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     isComplete: true,
+    isNew: false,
     name: "Personal Notes App",
     author: [ 
       "Heriyanto",
@@ -114,6 +147,52 @@ const collectionsResource = [
         { id: 0, url: "./images/ui/note-1.webp", },
     ],
   },
+  {
+    id: 8,
+    isComplete: true,
+    isNew: false,
+    name: "MyBooks Apps",
+    author: [ 
+      "Heriyanto",
+    ],
+    logo: "./images/logo/mybooks.webp",
+    description: "Create interactive web front-end application that have storage feature using web storage.",
+    view: "https://mybooks-apps.netlify.app",
+    github: "https://github.com/herya17/mybooks-apps",
+    images: [
+        { id: 0, url: "./images/ui/mybooks-1.webp", },
+    ],
+  },
 ];
 
-export { collectionsResource };
+const getAllCollections = () => {
+  return collections;
+}
+
+const getNewCollections = () => {
+  const newCollections = collections.filter((collection) => collection.isNew);
+  return newCollections;
+}
+
+const getUpcomingCollections = () => {
+  const upcomingCollections = collections.filter((collection) => !collection.isComplete);
+  return upcomingCollections;
+}
+
+export { getAllCollections, getNewCollections, getUpcomingCollections };
+
+
+// {
+//   id: 0,
+//   isComplete: false,
+//   isNew: false,
+//   name: "Tebak Pacar",
+//   author: [ 
+//     "Heriyanto",
+//   ],
+//   logo: "./images/logo/tebak-pacar.webp",
+//   description: "I'm working on something that can surprise you, I will be here soon, keep smiling.",
+//   view: "https://tebak-pacar.netlify.app",
+//   github: "",
+//   images: [],
+// },

@@ -1,14 +1,18 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './navbar/NavBar';
 import DynamicIsland from './templates/DynamicIsland';
-import CollectionsApp from './templates/CollectionsApp';
-import { collectionsResource } from '../data/collectionsResource';
+import Collections from './templates/Collections';
+import { getAllCollections, getNewCollections, getUpcomingCollections } from '../data/collectionsResource';
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			collections: collectionsResource,
+			collections: getAllCollections(),
+			newCollections: getNewCollections(),
+			upcomingCollections: getUpcomingCollections(),
 			search: "",
 		}
 
@@ -68,17 +72,56 @@ class App extends React.Component {
 			collection.name.toLowerCase().includes(this.state.search.toLowerCase())
 		));
 
+		const newCollections = this.state.newCollections.filter((collection) => (
+			collection.name.toLowerCase().includes(this.state.search.toLowerCase())
+		));
+
+		const upcomingCollections = this.state.upcomingCollections.filter((collection) => (
+			collection.name.toLowerCase().includes(this.state.search.toLowerCase())
+		));
+
 		return (
 			<>
-				<DynamicIsland
-					value={this.state.search}
-					onChange={this.onSearchChangeEventHandler}
-					onClick={this.onSearchDeleteEventHandler}
-					onBlur={this.onBlurEventHandler} />
-				<CollectionsApp
-					collections={collections}
-					open={this.openEventHandler}
-					openCode={this.openCodeEventHandler} />
+				<header>
+    			<app-bar></app-bar>
+					<NavBar />
+  			</header>
+  			<main>
+					<DynamicIsland
+						value={this.state.search}
+						onChange={this.onSearchChangeEventHandler}
+						onClick={this.onSearchDeleteEventHandler}
+						onBlur={this.onBlurEventHandler} />
+					<Routes>
+						<Route 
+							path='/' 
+							element={
+								<Collections 
+									collections={collections}
+								 	openEventHandler={this.openEventHandler}
+									openCodeEventHandler={this.openCodeEventHandler} />
+							} />
+						<Route
+							path='/new'
+							element={
+								<Collections
+									collections={newCollections}
+									openEventHandler={this.openEventHandler}
+									openCodeEventHandler={this.openCodeEventHandler} />
+							} />
+						<Route
+							path='/upcoming'
+							element={
+								<Collections
+									collections={upcomingCollections}
+									openEventHandler={this.openEventHandler}
+									openCodeEventHandler={this.openCodeEventHandler} />
+							} />
+					</Routes>
+				</main>
+				<footer>
+    			<foot-bar></foot-bar>
+  			</footer>
 			</>
 		);
 	}
