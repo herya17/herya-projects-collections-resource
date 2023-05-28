@@ -1,6 +1,7 @@
 # Herya Projects
 
-https://heryapro.netlify.app/
+
+Open project: https://heryapro.netlify.app
 
 # Getting Started with Create React App
 
