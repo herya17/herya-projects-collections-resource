@@ -32,6 +32,20 @@ const collections = [
     id: 2,
     isComplete: true,
     isNew: true,
+    name: "Herya Pro",
+    author: [ 
+      "Heriyanto",
+    ],
+    logo: "./images/logo/herya.webp",
+    description: "Herya Pro is my entire portfolio collection, Herya Pro is built using React by implementing clean and reusable code and ensuring responsive web design using mobile first approach.",
+    view: "https://heryapro.netlify.app",
+    github: "https://github.com/herya17/herya-projects-resource",
+    images: [],
+  },
+  {
+    id: 3,
+    isComplete: true,
+    isNew: true,
     name: "HeyCa!!",
     author: [ 
       "Heriyanto",
@@ -51,9 +65,9 @@ const collections = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     isComplete: true,
-    isNew: true,
+    isNew: false,
     name: "Personal Notes App v2",
     author: [ 
       "Heriyanto",
@@ -69,7 +83,7 @@ const collections = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     isComplete: true,
     isNew: false,
     name: "Her App",
@@ -90,7 +104,7 @@ const collections = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     isComplete: true,
     isNew: false,
     name: "Her App Version 2",
@@ -111,7 +125,7 @@ const collections = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     isComplete: true,
     isNew: false,
     name: "EPL Unofficial App",
@@ -132,7 +146,7 @@ const collections = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     isComplete: true,
     isNew: false,
     name: "Personal Notes App",
@@ -148,7 +162,7 @@ const collections = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     isComplete: true,
     isNew: false,
     name: "MyBooks Apps",
